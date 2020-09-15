@@ -7,8 +7,8 @@ import {
   totalRecovered,
 } from "./domVariables.js";
 
-// import renderData from "./map.js";
-// renderData();
+import renderData from "./map.js";
+renderData();
 
  import {renderTotalInfo, renderTodayInfo} from "./cardsInfo.js";
 
