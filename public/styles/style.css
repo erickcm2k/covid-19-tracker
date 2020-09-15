@@ -6,7 +6,7 @@
 
 body {
   font-family: "Nunito", sans-serif;
-  -webkit-font-smoothing: antialiased;
+  /* -webkit-font-smoothing: antialiased; */
   font-size: 62.5%;
 }
 
@@ -58,13 +58,17 @@ body {
   width: 90%;
 }
 
+.container.more-info-container {
+  width: 100%;
+  background-color: #333333;
+}
+
 .flex-container {
   display: flex;
 }
 
 .map-container {
   border: 1px solid red;
-
   flex: 80%;
   width: 100%;
 }
@@ -85,31 +89,34 @@ body {
 }
 
 .card {
+  background-color: rgb(246, 246, 246);
   display: flex;
   flex-flow: column;
   border-radius: 25px;
   overflow: hidden;
-  background-color: beige;
   width: 90%;
   margin: 0 auto;
+  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.3);
 }
 
 .card-title {
   text-align: center;
   font-size: 1rem;
   padding: 0.6rem 0;
-  background-color: purple;
+  background-color: rgba(34, 162, 242, 1);
   color: white;
 }
 
 .card-elements-container {
   border: 1px solid red;
-
   display: flex;
   flex-direction: column;
 }
 
 .card-element {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
   font-size: 1rem;
   border-radius: 10px;
   margin: 0.5rem auto;
@@ -117,25 +124,26 @@ body {
   padding-bottom: 0.5rem;
   text-align: center;
   width: 80%;
+  box-shadow: 0 0.1rem 0.1rem rgba(0, 0, 0, 0.3);
 }
 
 .card-element span {
-  font-size: 0.8rem;
+  font-size: 1.2rem;
 }
 
 .card-element-confirmed {
-  background-color: green;
-  color: white;
+  background-color: #edf2f7;
+  color: #718096;
 }
 
 .card-element-deaths {
-  background-color: red;
-  color: white;
+  background-color: #fff5f5;
+  color: #e53e3e;
 }
 
 .card-element-recovered {
-  background-color: blue;
-  color: white;
+  background-color: #f0fff4;
+  color: #38a169;
 }
 
 .more-info {

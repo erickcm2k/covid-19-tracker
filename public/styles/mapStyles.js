@@ -1,12 +1,8 @@
-function foo() {
-  return 'foo';
-}
-
-const styles = [
+export const styles = [
   {
     stylers: [
       {
-        hue: '#ff1a00',
+        hue: "#ff1a00",
       },
       {
         invert_lightness: true,
@@ -23,14 +19,12 @@ const styles = [
     ],
   },
   {
-    featureType: 'water',
-    elementType: 'geometry',
+    featureType: "water",
+    elementType: "geometry",
     stylers: [
       {
-        color: '#2D333C',
+        color: "#2D333C",
       },
     ],
   },
 ];
-
-export { foo, styles };
